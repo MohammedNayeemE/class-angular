@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div *ngIf="isLoggedIn">
+        
+        <p>Welcome, user!</p>
+      </div>
+      
+      <ng-template #loginMessage>
+        
+        <p>Please log in to access this content.</p>
+      </ng-template>
+      <h2>Hello Component</h2>
+  
+      <!-- Example using NgModel for two-way binding -->
+      <label >Enter your name:</label>
+      <input id="name" [(ngModel)] = "Name" />
+      
+     <p>{{Name}}</p>
+  
+      <!-- <p>First name value: {{ first.value }}</p>
+      <p>First name valid: {{ first.valid }}</p>
+      <p>Form value: {{ f.value | json }}</p>
+      <p>Form valid: {{ f.valid }}</p> -->
+</body>
+</html>

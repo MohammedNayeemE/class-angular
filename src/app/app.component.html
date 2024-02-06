@@ -1,0 +1,22 @@
+
+
+  
+ 
+  
+<nav>
+  <ul>
+    
+    <li><a routerLink="/hello" routerLinkActive="active" ariaCurrentWhenActive="page">Hello Component</a></li>
+  </ul>
+</nav>
+<div>
+  <app-user-card
+[userName]="'John Doe'"
+[email]="'john.doe@example.com'"
+[mobileNumber]="'123-456-7890'"
+[additionalInfo]="'Some additional information about the user.'"
+></app-user-card>
+</div>
+<app-empinfo></app-empinfo>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
