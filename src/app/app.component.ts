@@ -5,11 +5,12 @@ import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { TestService } from './test.service';
 import { EmpinfoComponent } from './empinfo/empinfo.component';
-
+import { FormsModule } from '@angular/forms';
+import { FormComponentComponent } from './form-component/form-component.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet , HelloComponent ,RouterLink , RouterLinkActive , EmpinfoComponent, UserCardComponent,NgIf , NgFor],
+  imports: [CommonModule, RouterOutlet , HelloComponent ,RouterLink , RouterLinkActive , EmpinfoComponent, UserCardComponent,NgIf , NgFor , FormComponentComponent],
   
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
