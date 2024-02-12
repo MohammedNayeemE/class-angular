@@ -7,10 +7,11 @@ import { TestService } from './test.service';
 import { EmpinfoComponent } from './empinfo/empinfo.component';
 import { FormsModule } from '@angular/forms';
 import { FormComponentComponent } from './form-component/form-component.component';
+import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet , HelloComponent ,RouterLink , RouterLinkActive , EmpinfoComponent, UserCardComponent,NgIf , NgFor , FormComponentComponent],
+  imports: [CommonModule, RouterOutlet , HelloComponent ,RouterLink , RouterLinkActive , EmpinfoComponent, UserCardComponent,NgIf , NgFor , FormComponentComponent ,HttpClientModule],
   
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
